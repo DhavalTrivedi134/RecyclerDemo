@@ -33,7 +33,6 @@ class MainActivity : AppCompatActivity(){
         arrayList= ArrayList()
         tempArrayList = ArrayList()
 
-        //name = arrayOf("CollapsingToolBarLayout","banana","chickoo","Dragon fruit","Egg","Fish","Ginger","Honey","Ice cream","Jelly","kit-kat")
         name = kotlin.collections.ArrayList()
         name.add("CollapsingToolBarLayout")
         name.add("Drawer Layout")

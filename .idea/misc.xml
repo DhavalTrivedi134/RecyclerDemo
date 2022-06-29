@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/circle.xml" value="0.1465" />
+        <entry key="app/src/main/res/drawable/checkbox_checked.xml" value="0.1465" />
+        <entry key="app/src/main/res/drawable/checkbox_unchecked.xml" value="0.1465" />
+        <entry key="app/src/main/res/drawable/checkedradiobutton.xml" value="0.1465" />
+        <entry key="app/src/main/res/drawable/custom_checkbox.xml" value="0.1465" />
+        <entry key="app/src/main/res/drawable/custom_radio_button.xml" value="0.1465" />
+        <entry key="app/src/main/res/drawable/ic_baseline_360_24.xml" value="0.1465" />
+        <entry key="app/src/main/res/drawable/ic_home.xml" value="0.1465" />
+        <entry key="app/src/main/res/drawable/ic_people.xml" value="0.1465" />
+        <entry key="app/src/main/res/drawable/uncheckedradiobutton.xml" value="0.1465" />
+        <entry key="app/src/main/res/layout/activity_bottom_sheet.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/layout/activity_check_box.xml" value="0.17552083333333332" />
+        <entry key="app/src/main/res/layout/activity_collapsing_tool_bar_layout.xml" value="0.17552083333333332" />
+        <entry key="app/src/main/res/layout/activity_drawerlayout.xml" value="0.17552083333333332" />
+        <entry key="app/src/main/res/layout/activity_fragment.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_radio_button.xml" value="0.17552083333333332" />
+        <entry key="app/src/main/res/layout/activity_ratingbar.xml" value="0.24114583333333334" />
+        <entry key="app/src/main/res/layout/activity_recycler_demo.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/layout/activity_retrofit_demo.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/layout/activity_scrolling.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_seek_bar.xml" value="0.17552083333333332" />
+        <entry key="app/src/main/res/layout/activity_switch.xml" value="0.17552083333333332" />
+        <entry key="app/src/main/res/layout/activity_text_input_layout.xml" value="0.17552083333333332" />
+        <entry key="app/src/main/res/layout/activity_text_to_speech.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/layout/activity_toggle_button.xml" value="0.17552083333333332" />
+        <entry key="app/src/main/res/layout/content_scrolling.xml" value="0.17552083333333332" />
+        <entry key="app/src/main/res/layout/custom_rv.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.17552083333333332" />
+        <entry key="app/src/main/res/layout/login_fragment.xml" value="0.16354166666666667" />
+        <entry key="app/src/main/res/layout/nav_header.xml" value="0.17552083333333332" />
+        <entry key="app/src/main/res/layout/recycler_data_design.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/drawer_list.xml" value="0.17552083333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

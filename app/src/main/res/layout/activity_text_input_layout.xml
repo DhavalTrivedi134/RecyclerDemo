@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TextInputLayoutActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emp_name"
+            android:hint="Employee name"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="25dp"
+            android:padding="10dp"
+            android:inputType="text"
+            android:background="@drawable/borders"
+            android:textColor="@android:color/holo_purple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emp_name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emp_designation"
+            android:layout_below="@+id/emp_name"
+            android:textColorHint="@color/black"
+            android:hint="Employee designation"
+            android:padding="10dp"
+            android:inputType="text"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="25dp"
+            android:background="@drawable/borders"
+            android:textColor="@android:color/holo_purple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emp_designation1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emp_mobile_number"
+            android:layout_below="@id/emp_designation"
+            android:hint="Employee mobile number"
+            android:textColorHint="@color/black"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="25dp"
+            android:background="@drawable/borders"
+            android:textColor="@android:color/holo_purple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emp_mobile_number1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emp_email_address"
+            android:layout_below="@id/emp_mobile_number"
+            android:hint="Employee email address"
+            android:textColorHint="@color/black"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="25dp"
+            android:padding="10dp"
+            android:background="@drawable/borders"
+            android:textColor="@android:color/holo_purple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emp_email_address1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emp_city"
+            android:layout_below="@id/emp_email_address"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="25dp"
+            android:background="@drawable/borders"
+            app:endIconDrawable="@drawable/ic_baseline_arrow_drop_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/emp_gender"
+            android:layout_below="@id/emp_city"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="25dp"
+            android:background="@drawable/borders"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="Male"
+                android:id="@+id/emp_male"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:text="Female"
+                android:id="@+id/emp_female"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emp_checkboxmain"
+            android:layout_below="@+id/emp_gender"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/emp_chackbox1"
+                    android:layout_below="@+id/emp_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/emp_bachlor"
+                        android:text="Bachlor"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/emp_master"
+                        android:text="Master"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/emp_chackbox2"
+                    android:layout_below="@+id/emp_gender"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/emp_mphill"
+                        android:text="M. phill"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/emp_Phd"
+                        android:text="Phd"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emp_submit"
+            android:layout_below="@+id/emp_checkboxmain"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/emp_submit1"
+                android:text="Submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emp_buttons"
+            android:layout_below="@+id/emp_submit"
+            android:weightSum="2"
+            android:layout_marginTop="20dp"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_weight="1"
+                    android:id="@+id/emp_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Employee"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_weight="1"
+                    android:id="@+id/emp_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View Employee"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

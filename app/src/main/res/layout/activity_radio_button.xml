@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RadioButtonActivity">
+
+    <RadioGroup
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="male"
+            android:button="@drawable/custom_radio_button"
+            android:id="@+id/male"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:textColor="@android:color/holo_blue_dark"
+            android:buttonTint="@color/teal_700"/>
+
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="female"
+            android:button="@drawable/custom_radio_button"
+            android:id="@+id/female"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:textColor="@android:color/holo_blue_dark"
+            android:buttonTint="@color/teal_700"/>
+
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="transgender"
+            android:button="@drawable/custom_radio_button"
+            android:id="@+id/transgender"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:textColor="@android:color/holo_blue_dark"
+            android:buttonTint="@color/teal_700"/>
+
+
+    </RadioGroup>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show"
+        android:backgroundTint="@color/teal_700"
+        android:insetBottom="0dp"
+        android:insetTop="0dp"
+        app:rippleColor="@android:color/holo_red_dark"
+        app:layout_constraintTop_toBottomOf="@id/radiogroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="@android:color/holo_blue_dark"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

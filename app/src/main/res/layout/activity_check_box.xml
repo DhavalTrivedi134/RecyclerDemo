@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CheckBoxActivity">
+
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/cricket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cricket"
+        android:button="@drawable/custom_checkbox"
+        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="100dp"
+        android:buttonTint="@android:color/holo_red_dark"
+        android:textColor= "@android:color/holo_purple"
+        android:textSize="25dp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/chess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chess"
+        android:button="@drawable/custom_checkbox"
+        app:layout_constraintTop_toBottomOf="@+id/cricket"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="10dp"
+        android:buttonTint="@android:color/holo_red_dark"
+        android:textColor= "@android:color/holo_purple"
+        android:textSize="25dp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/carrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carrom"
+        android:button="@drawable/custom_checkbox"
+        app:layout_constraintTop_toBottomOf="@id/chess"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="10dp"
+        android:buttonTint="@android:color/holo_red_dark"
+        android:textColor= "@android:color/holo_purple"
+        android:textSize="25dp"/>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/cards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cards"
+        app:layout_constraintTop_toBottomOf="@id/carrom"
+        android:button="@drawable/custom_checkbox"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="10dp"
+        android:buttonTint="@android:color/holo_red_dark"
+        android:textColor= "@android:color/holo_purple"
+        android:textSize="25dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:backgroundTint="@color/teal_700"
+        android:insetBottom="0dp"
+        android:insetTop="0dp"
+        app:rippleColor="@android:color/holo_red_dark"
+        app:layout_constraintTop_toBottomOf="@id/cards"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="@android:color/holo_blue_dark"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
